@@ -18,9 +18,51 @@ public class Person {
     } 
     
     
-    // method 1 
+    // set first name 
     public void setFName(String newFname) 
     { 
         this.firstName = newFname;
     } 
+    
+    // set last name 
+    public void setLName(String newLname) 
+    { 
+        this.lastName = newLname;
+    } 
+    
+    // set address
+    public void setAdd(String newAddress) 
+    { 
+        this.address = newAddress;
+    } 
+    
+    // set phone number
+    public void setPhone(String newPhone) 
+    { 
+        this.phoneNumber = newPhone;
+    } 
+    
+    // get first name 
+    public String getFName() 
+    {
+    	return firstName;
+    }
+    
+    // get last name     
+    public String getLName() 
+    {
+    	return lastName;
+    }
+    
+    // get address
+    public String getAdd() 
+    {
+    	return address;
+    }
+    
+    // get phone number
+    public String getPhone() 
+    {
+    	return phoneNumber;
+    }
 }
