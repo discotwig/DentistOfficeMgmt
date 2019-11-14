@@ -10,13 +10,13 @@ public class Patient extends Person {
 		this.socialSecurityNum = social; 
 	}
 
-    // set specialization
+    // set socialSecurityNum
     public void setSocial(String newSocial) 
     { 
         this.socialSecurityNum = newSocial;
     } 
     
-    // get specialization
+    // get socialSecurityNum
     public String getSocial() 
     {
     	return socialSecurityNum;
