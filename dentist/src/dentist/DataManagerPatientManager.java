@@ -2,6 +2,6 @@ package dentist;
 
 import java.util.ArrayList;
 
-public class DataManagerPatientManager extends Person {
-	ArrayList<String> PatientManager = new ArrayList<String>();
+public class PatientManager extends DataManager {
+	ArrayList<String> patient_manager = new ArrayList<String>();
 }
