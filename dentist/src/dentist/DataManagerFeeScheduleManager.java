@@ -2,6 +2,6 @@ package dentist;
 
 import java.util.ArrayList;
 
-public class DataManagerFeeScheduleManager {
-	ArrayList<String> feeschedule = new ArrayList<String>();
+public class FeeScheduleManager extends DataManager {
+	ArrayList<String> fee_schedule = new ArrayList<String>();
 }
