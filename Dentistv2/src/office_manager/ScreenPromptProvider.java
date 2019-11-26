@@ -19,7 +19,7 @@ public class ScreenPromptProvider {
 	}
 	
 	
-	//to add recrods to current list/tables 
+	//to add records to current list/tables 
 	public void addRecordPrompt(String sectionName, String specialField, DataManager sectionDataManager) {
 		
 		
