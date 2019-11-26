@@ -1,10 +1,11 @@
 package office_manager;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DataManager {
 	
-	DataManager dataArrayList;
+	ArrayList<DataStructure> dataArrayList;
 	Scanner input;	
 	
 	public void singleRecordDisplay() {
