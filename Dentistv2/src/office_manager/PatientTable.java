@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class PatientTable {
 	
-	DataManager patientDataManager;
-	ScreenPromptProvider patientScreenPrompts;
+	DataManager patientDataManager = new DataManager();
+	ScreenPromptProvider patientScreenPrompts = new ScreenPromptProvider();
 	Scanner input = new Scanner(System.in);	
 	String specialField = "Phone";
 	String sectionName = "Patient";
@@ -39,7 +39,6 @@ public class PatientTable {
 	/* What would you like to do? */
 	public int serviceSelector() {
 		return patientScreenPrompts.serviceSelectorPrompt();
-		
 	}
 	
 	/* Returns list of patients */

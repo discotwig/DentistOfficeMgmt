@@ -8,19 +8,19 @@ public class DataManager {
 	ArrayList<DataStructure> dataArrayList = new ArrayList<DataStructure>();
 	Scanner input = new Scanner(System.in);	
 	
-	public void singleRecordDisplay() {
-		
-		
-		System.out.println(dataArrayList[0].getString1());
-		
+	public void singleRecordDisplay(int in) {
+		DataStructure record = dataArrayList.get(in);
+		System.out.println(record);
 	}
 	
-	public void singleFeeDisplay() {
-		
+	public void singleFeeDisplay(int in) {
+		DataStructure fee = dataArrayList.get(in);
+		System.out.println(fee);
 	}
 	
-	public void stringListDisplay() {
-		
+	public void stringListDisplay(int in) {
+		DataStructure list = dataArrayList.get(in);
+		System.out.println(list);
 	}
 	
 	public void feeListDisplay() {
@@ -31,12 +31,12 @@ public class DataManager {
 		dataArrayList.add(new DataStructure(string1, string2, string3, string4, string5));
 	}
 	
-	public void removeRecord() {
-		
+	public void removeRecord(int ind) {
+		dataArrayList.remove(ind);
 	}
 	
 	public void modifyStringRecord() {
-		modifyRecordPrompt
+		
 	}
 	
 	public void modifyFeeRecord() {
