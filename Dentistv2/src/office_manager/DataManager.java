@@ -23,7 +23,7 @@ public class DataManager {
 		
 	}
 	
-	public void addStringRecord() {
+	public void addStringRecord(String fName, String lName, String address, String phone, String spcf) {
 		
 	}
 	
@@ -38,4 +38,5 @@ public class DataManager {
 	public void modifyFeeRecord() {
 		
 	}
+
 }

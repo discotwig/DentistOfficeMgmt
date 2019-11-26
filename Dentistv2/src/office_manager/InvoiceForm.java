@@ -7,6 +7,7 @@ public class InvoiceForm {
 	String invoiceHeader;
 	ArrayList<DataStructure> invoiceBodyArrayList;
 	
+		/*	getters	*/ 
     public void setInvoiceHeader(String invoiceHeader) 
     { 
         this.invoiceHeader = invoiceHeader;
@@ -17,5 +18,6 @@ public class InvoiceForm {
     {
     	return invoiceHeader;
     }
+
     
 }
