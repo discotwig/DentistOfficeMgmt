@@ -29,11 +29,11 @@ public class ScreenPromptProvider {
 		{
 		System.out.printf("Please enter the new %s First Name: \n", sectionName);
 		String fName=input.nextLine();
-		System.out.printf("Please enter the new assistant Last Name: \n", sectionName);
+		System.out.printf("Please enter the new %s Last Name: \n", sectionName);
 		String lName=input.nextLine();
-		System.out.printf("Please enter the new assistant Street Address: \n", sectionName);
+		System.out.printf("Please enter the new %s Street Address: \n", sectionName);
 		String address=input.nextLine();
-		System.out.printf("Please enter the new assistant Phone Number (555-55-5555): \n", sectionName);
+		System.out.printf("Please enter the new %s Phone Number (555-55-5555): \n", sectionName);
 		String phone=input.nextLine();
 		System.out.printf("Please enter the new %s %s: \n", sectionName, specialField);
 		String spcf=input.nextLine();

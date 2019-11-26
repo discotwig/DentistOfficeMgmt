@@ -7,32 +7,42 @@ public class PatientTable {
 	
 	DataManager patientDataManager;
 	ScreenPromptProvider patientScreenPrompts;
-	Scanner input;	
+	Scanner input = new Scanner(System.in);	
+	String specialField = "Phone";
+	String sectionName = "Patient";
 	
-	public void recordListInitiator () {
-		
+	/* Creates the record list */
+	public void recordListInitiator() {
+		patientDataManager.addStringRecord("James", "Dean", "123 Walrus Street", "888-459-7489", "Britches");
 	}
 	
-	public void recordListDisplay () {
-		
+	/* Displays the record list */
+	public void recordListDisplay() {
+		patientScreenPrompts.listGenerator(sectionName, specialField, patientDataManager);
 	}
 	
-	public void addRecord () {
-		
+	/* Adds new record to list */
+	public void addRecord() {
+		patientScreenPrompts.addRecordPrompt(sectionName, specialField, patientDataManager);
 	}
 	
-	public void removeRecord () {
-		
+	/* Removes record from list */
+	public void removeRecord() {
+		patientScreenPrompts.removeRecordPrompt(sectionName, patientDataManager);
 	}
 	
-	public void modifyRecord () {
-		
+	/* Modifies record in list */
+	public void modifyRecord() {
+		patientScreenPrompts.modifyRecordPrompt(sectionName, specialField, patientDataManager);
 	}
 
-	public void serviceSelector () {
+	/* What would you like to do? */
+	public int serviceSelector() {
+		return patientScreenPrompts.serviceSelectorPrompt();
 		
 	}
 	
+	/* Returns list of patients */
 	public ArrayList<DataStructure> getCurrentPatientList () {
 		return null;
 		
