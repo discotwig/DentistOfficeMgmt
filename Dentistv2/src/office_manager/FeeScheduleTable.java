@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FeeScheduleTable {
-	DataManager feeScheduleDataManager;
-	Scanner input;	
+	DataManager feeScheduleDataManager = new DataManager();
+	Scanner input = new Scanner(System.in);	
 	
 	public void recordListInitiator() {
-		
+		feeScheduleDataManager.
 	}
 	
 	public void recordListDisplay() {
