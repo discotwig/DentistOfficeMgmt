@@ -18,9 +18,9 @@ public class DataManager {
 		System.out.println(fee);
 	}
 	
-	public void stringListDisplay(int in) {
-		DataStructure list = dataArrayList.get(in);
-		System.out.println(list);
+	public String stringListDisplay() {
+		System.out.println(dataArrayList);
+		return null;
 	}
 	
 	public void feeListDisplay() {
@@ -31,8 +31,8 @@ public class DataManager {
 		dataArrayList.add(new DataStructure(string1, string2, string3, string4, string5));
 	}
 	
-	public void removeRecord(int ind) {
-		dataArrayList.remove(ind);
+	public void removeRecord(int in) {
+		dataArrayList.remove(in);
 	}
 	
 	public void modifyStringRecord() {

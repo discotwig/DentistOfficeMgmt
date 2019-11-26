@@ -43,7 +43,7 @@ public class PatientTable {
 	
 	/* Returns list of patients */
 	public ArrayList<DataStructure> getCurrentPatientList () {
-		return null;
+		return patientDataManager.di
 		
 	}
 }
