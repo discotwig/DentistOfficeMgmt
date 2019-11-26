@@ -10,6 +10,7 @@ public class DataManager {
 	
 	public void singleRecordDisplay() {
 		
+		
 		System.out.println(dataArrayList[0].getString1());
 		
 	}
@@ -26,8 +27,8 @@ public class DataManager {
 		
 	}
 	
-	public void addStringRecord(String fName, String lName, String address, String phone, String spcf) {
-		dataArrayList.
+	public void addStringRecord(String string1, String string2, String string3, String string4, String string5) {
+		dataArrayList.add(new DataStructure(string1, string2, string3, string4, string5));
 	}
 	
 	public void removeRecord() {
@@ -35,7 +36,7 @@ public class DataManager {
 	}
 	
 	public void modifyStringRecord() {
-		
+		modifyRecordPrompt
 	}
 	
 	public void modifyFeeRecord() {

@@ -24,63 +24,63 @@ public class DataStructure {
 	}
 	
 		/*	setters */
-    public void setString1(String string1) 
+    public void setS1(String string1) 
     { 
         this.string1 = string1;
     } 
     
-    public void setString2(String string2) 
+    public void setS2(String string2) 
     { 
         this.string2 = string2;
     } 
     
-    public void setString3(String string3) 
+    public void setS3(String string3) 
     { 
         this.string3 = string3;
     } 
     
-    public void setString4(String string4) 
+    public void setS4(String string4) 
     { 
         this.string4 = string4;
     } 
     
-    public void setString5(String string5) 
+    public void setS5(String string5) 
     { 
         this.string5 = string5;
     } 
     
-    public void setDouble1(double double1) 
+    public void setD1(double double1) 
     { 
         this.double1 = double1;
     } 
     
     	/*	getters	*/   
-    public String getString1() 
+    public String getS1() 
     {
     	return string1;
     }
     
-    public String getString2() 
+    public String getS2() 
     {
     	return string2;
     }
     
-    public String getString3() 
+    public String getS3() 
     {
     	return string3;
     }
     
-    public String getString4() 
+    public String getS4() 
     {
     	return string4;
     }
     
-    public String getString5() 
+    public String getS5() 
     {
     	return string5;
     }
     
-    public double getDouble1() 
+    public double getD1() 
     {
     	return double1;
     }
