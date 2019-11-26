@@ -1,18 +1,31 @@
-import java.util.Scanner;
 package dentist;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
 public class DataManager {
-	Scanner DataManager = new Scanner(System.in); 
+
+	
+	
 	public DataManager() {
-		// TODO Auto-generated constructor stub
+
 		    ArrayList<String> DataManager = new ArrayList<String>();
-		    DataManager.singleRecordDisplay();
-		    DataManager.recordListDisplay();
-		    DataManager.add();
-		    DataManager.remove();
-		    DataManager.modify();
-		    DataManager.serviceSelector();
-		    DataManager.recordListInitiator();
+		    
+		    public void singleRecordDisplay() {
+		    };
+		    public void recordListDisplay() {
+		    };
+		    public void add() {
+		    };
+		    public void remove() {
+		    };
+		    public void modify() {
+		    };
+		    public void serviceSelector() {
+		    };
+		    public void recordListInitiator() {
+		    };
 		    
 
 	}
