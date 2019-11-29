@@ -1,5 +1,15 @@
 package office_manager;
 
+/*	DataManager creates multiple instances of this class, DataStructure
+ *	and puts them in a list
+ *	to be printed and manipulated
+ *
+ *
+ *	A Table creates 1 instance of DataManager
+ *	and uses DataManager's methods to create lists within DataManager
+ *	
+ */
+
 public class DataStructure {
 	String string1;
 	String string2;
@@ -8,7 +18,7 @@ public class DataStructure {
 	String string5;
 	double double1;
 	
-		/*	overloaded constructors */
+		/*	overloaded constructors for doctors, patents, and assistants	*/
 	public DataStructure(String string1, String string2, String string3, String string4, String string5) {
         this.string1 = string1; 
         this.string2 = string2; 
@@ -18,6 +28,7 @@ public class DataStructure {
         this.string5 = string5; 
 	}
 	
+		/*	overloaded constructors for fees	*/
 	public DataStructure(String string1, double double1) {
         this.string1 = string1; 
         this.double1 = double1; 

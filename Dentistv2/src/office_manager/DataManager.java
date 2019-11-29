@@ -1,5 +1,9 @@
 package office_manager;
 
+/* All tables use 1 instance of this class
+ * 
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -18,13 +22,12 @@ public class DataManager {
 		System.out.println(fee);
 	}
 	
-	public String stringListDisplay() {
+	public void stringListDisplay(int in) {
 		System.out.println(dataArrayList);
-		return null;
 	}
 	
 	public void feeListDisplay() {
-		
+		System.out.println(dataArrayList);
 	}
 	
 	public void addStringRecord(String string1, String string2, String string3, String string4, String string5) {
@@ -35,12 +38,15 @@ public class DataManager {
 		dataArrayList.remove(in);
 	}
 	
-	public void modifyStringRecord() {
+	public void modifyStringRecord(int in) {
 		
+		DataStructure newRecord = new DataStructure(string1, string2, string3, string4, string5);
+		
+		dataArrayList.set(in, newRecord);
 	}
 	
-	public void modifyFeeRecord() {
-		
+	public void modifyFeeRecord(int in) {
+		dataArrayList.remove(in);
 	}
 	
 }
