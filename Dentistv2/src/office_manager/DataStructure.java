@@ -95,5 +95,5 @@ public class DataStructure {
     {
     	return double1;
     }
-
+    
 }

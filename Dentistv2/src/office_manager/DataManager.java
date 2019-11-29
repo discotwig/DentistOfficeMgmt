@@ -23,14 +23,15 @@ public class DataManager {
 	}
 	
 	public void stringListDisplay() {
-		
 		for (int counter = 0; counter < dataArrayList.size(); counter++) { 		      
-			System.out.println(dataArrayList.get(getS1())); 		
+			System.out.println(dataArrayList.get(counter)); 		
 		} 
 	}
 	
 	public void feeListDisplay() {
-		System.out.println(dataArrayList);
+		for (int counter = 0; counter < dataArrayList.size(); counter++) { 		      
+			System.out.println(dataArrayList.get(counter)); 		
+		} 
 	}
 	
 	public void addStringRecord(String string1, String string2, String string3, String string4, String string5) {

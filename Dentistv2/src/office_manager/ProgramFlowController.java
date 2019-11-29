@@ -12,6 +12,7 @@ import java.util.Scanner;
  */
 
 public class ProgramFlowController {
+	
 	FeeScheduleTable feeScheduleManager;
 	PatientTable patientManager;
 	DoctorTable doctorManager;
@@ -22,7 +23,10 @@ public class ProgramFlowController {
 	
 	
 	public void DemoCreater() {
-		mainPromptHandler();
+		patientManager.recordListInitiator();
+		doctorManager.recordListInitiator();
+		assistantManager.recordListInitiator();
+		
 	}
 	
 	public void mainPromptDisplay() {
@@ -45,8 +49,30 @@ public class ProgramFlowController {
 	}
 	
 	public int userIntegerReciever() {
-		int ans = input.nextInt();
-		return ans;
+		
+		int selector = 0;		
+		//Handling exceptions that may arise due to user input mismatch
+				do
+				  { 
+				      try {
+				          String s = input.nextLine();
+				          selector = Integer.parseInt(s);
+				          break;
+				      }
+				      catch (Exception e)
+				      {
+				          System.out.println("Couldn't understand your input, please try again, select one of the above options:");
+				      }
+				  }
+				  while (true);
+				
+				if (selector < 1 || selector > 4) {
+					
+					System.out.println(" ");
+					System.out.println("Couldn't understand your input, I am sending you back to the main menu, please start over");
+				}
+				
+				return selector;
 	}
 	
 	public void mainPromptHandler() {
@@ -85,7 +111,7 @@ public class ProgramFlowController {
 				break;
 			default:
 				System.out.println("invalid input");
-		};
+		}
 	}
 
 }

@@ -22,6 +22,7 @@ public class PatientTable {
 	
 	/* Displays the record list */
 	public void recordListDisplay() {
+		
 		patientScreenPrompts.listGenerator(sectionName, specialField, patientDataManager);
 		
 		System.out.println("1- To add a new record to above list");
