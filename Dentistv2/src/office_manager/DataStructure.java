@@ -7,7 +7,7 @@ package office_manager;
  *
  *	A Table creates 1 instance of DataManager
  *	and uses DataManager's methods to create lists within DataManager
- *	
+ *	A Table also associates ScreenPromptProvider with distinct tables
  */
 
 public class DataStructure {

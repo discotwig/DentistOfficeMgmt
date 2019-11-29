@@ -130,9 +130,12 @@ public class ScreenPromptProvider {
 		input.nextLine();//firing a blank to resolve nextLine() skip problem. 
 		
 		//confirming the modification request
-		System.out.printf("please confirm the following %s is the one you want to update (Yes or No): %d \t %s \t %s \n", sectionName,
-				recordId, sectionDataManager.dataArrayList.get(recordId-1).getS1(),
-				sectionDataManager.dataArrayList.get(recordId-1).getS2() );
+		System.out.printf("please confirm the following %s is the one you want to update (Yes or No): %d \t %s \t %s \n", 
+				sectionName,
+				recordId, 
+				sectionDataManager.dataArrayList.get(recordId-1).getS1(),
+				sectionDataManager.dataArrayList.get(recordId-1).getS2() 
+				);
 		
 		String userWarningInput = input.nextLine().toLowerCase();
 		

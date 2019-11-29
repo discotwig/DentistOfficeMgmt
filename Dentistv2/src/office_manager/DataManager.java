@@ -22,8 +22,11 @@ public class DataManager {
 		System.out.println(fee);
 	}
 	
-	public void stringListDisplay(int in) {
-		System.out.println(dataArrayList);
+	public void stringListDisplay() {
+		
+		for (int counter = 0; counter < dataArrayList.size(); counter++) { 		      
+			System.out.println(dataArrayList.get(getS1())); 		
+		} 
 	}
 	
 	public void feeListDisplay() {
@@ -31,6 +34,7 @@ public class DataManager {
 	}
 	
 	public void addStringRecord(String string1, String string2, String string3, String string4, String string5) {
+		
 		dataArrayList.add(new DataStructure(string1, string2, string3, string4, string5));
 	}
 	
@@ -40,7 +44,7 @@ public class DataManager {
 	
 	public void modifyStringRecord(int in) {
 		
-		DataStructure newRecord = new DataStructure(string1, string2, string3, string4, string5);
+		DataStructure newRecord = new DataStructure(String string1, string2, string3, string4, string5);
 		
 		dataArrayList.set(in, newRecord);
 	}

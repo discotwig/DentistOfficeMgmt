@@ -10,6 +10,7 @@ import java.util.Scanner;
  * Does everything in here
  * Just to keep main() clean
  */
+
 public class ProgramFlowController {
 	FeeScheduleTable feeScheduleManager;
 	PatientTable patientManager;
@@ -21,7 +22,7 @@ public class ProgramFlowController {
 	
 	
 	public void DemoCreater() {
-		
+		mainPromptHandler();
 	}
 	
 	public void mainPromptDisplay() {
